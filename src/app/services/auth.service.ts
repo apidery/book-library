@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
-import * as firebase from firebase;
+import * as firebase from 'firebase';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
+
 export class AuthService {
 
   constructor() { }
@@ -39,6 +38,6 @@ export class AuthService {
   }
 
   signOutUser(){
-    firebase.auth.signOut();
+    firebase.auth().signOut();
   }
 }

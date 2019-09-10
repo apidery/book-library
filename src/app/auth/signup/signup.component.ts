@@ -10,9 +10,8 @@ import { Router } from '@angular/router';
 })
 export class SignupComponent implements OnInit {
 
-  signUpForms: FormGroup;
+  signUpForm: FormGroup;
   errorMsg: string;
-
 
   constructor(private formBuilder: FormBuilder, 
               private authService: AuthService, 
@@ -23,16 +22,17 @@ export class SignupComponent implements OnInit {
     this.initForm();
   }
 
-  initForm(){
-    this.signUpForms = this.formBuilder.group( {
-      email: ['', Validators.required, Validators.email],
+  initForm() {
+    this.signUpForm = this.formBuilder.group({
+      email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.pattern(/[0-9a-zA-Z]{6,}/)]]
     });
   }
 
-  onSubmit(){
-    const email = this.signUpForms.get('email').value;
-    const password = this.signUpForms.get('password').value;
+  onSubmit() {
+    const email = this.signUpForm.get('email').value;
+    const password = this.signUpForm.get('password').value;
+    
     this.authService.createNewUser(email, password).then(
       () => {
         this.router.navigate(['/books']);

@@ -8,15 +8,15 @@ import * as firebase from 'firebase';
 })
 export class AppComponent {
   constructor(){
-     // Your web app's Firebase configuration
+    // Your web app's Firebase configuration
     var firebaseConfig = {
-      apiKey: "AIzaSyDHd2c8KXEE5Feoy4HYla_BUHvIradbNUg",
-      authDomain: "book-library-project.firebaseapp.com",
-      databaseURL: "https://book-library-project.firebaseio.com",
-      projectId: "book-library-project",
-      storageBucket: "",
-      messagingSenderId: "778903111117",
-      appId: "1:778903111117:web:33071594483a40cb697084"
+      apiKey: "AIzaSyAPIhUyvw8xl6OTcIiJXFa1iBo8tbTpaLQ",
+      authDomain: "project-book-library.firebaseapp.com",
+      databaseURL: "https://project-book-library.firebaseio.com",
+      projectId: "project-book-library",
+      storageBucket: "project-book-library.appspot.com",
+      messagingSenderId: "414142576744",
+      appId: "1:414142576744:web:457c2df14ae4cc357b23dd"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);

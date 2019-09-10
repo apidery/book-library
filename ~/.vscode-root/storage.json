@@ -1363,5 +1363,19 @@
     },
     "theme": "vs-dark",
     "themeBackground": "#1e1e1e",
-    "pickerWorkingDir": "/home/apidery"
+    "pickerWorkingDir": "/home/apidery",
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/apidery/book-library",
+            "backupPath": "/home/apidery/book-library/~/.vscode-root/Backups/f4746b3d016a37e645925449386c8a10",
+            "uiState": {
+                "mode": 1,
+                "x": 896,
+                "y": 248,
+                "width": 1024,
+                "height": 768
+            }
+        },
+        "openedWindows": []
+    }
 }
